@@ -1,9 +1,13 @@
+import logging
+
 _config: dict[str, str | int] = {
-    "max_workers": 5,
+    "max_workers": 6,
     "url_base_api": "https://dns.google/resolve",
     "error_column": "error",
     "errors_folder": "errors",
     "results_folder": "results",
+    "log_level": logging.INFO,
+    "log_format": '%(asctime)s - %(levelname)s - %(message)s'
 }
 
 
@@ -27,3 +31,11 @@ class Config:
     @staticmethod
     def get_results_folder() -> str:
         return _config.get("results_folder", "results")
+
+    @staticmethod
+    def get_log_level() -> int:
+        return _config.get("log_level", logging.INFO)
+
+    @staticmethod
+    def get_log_format() -> str:
+        return _config.get("log_format", '%(asctime)s - %(levelname)s - %(message)s')

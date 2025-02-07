@@ -20,6 +20,8 @@ def extract_domain(url: str) -> str:
         if is_ip_address(hostname):
             raise ValueError(f"Hostname is an IP address: {url}")
 
+        hostname = hostname.encode('idna').decode('ascii')
+
         parts = hostname.split('.')[::-1]
 
         if len(parts) >= 2:
