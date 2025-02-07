@@ -15,7 +15,7 @@ def main():
     if not files:
         logging.warning(
             f"No CSV files found in '{DATA_SOURCE_DIRECTORY}'. Please ensure the files are in the correct directory."
-            f"\n The expected format is 'country_platform.csv', where country is the ISO 3166-1 alpha-2 code and platform is the platform name."
+            f"\n The expected format is 'country-platform.csv', where country is the ISO 3166-1 alpha-2 code and platform is the platform name."
         )
         return
 

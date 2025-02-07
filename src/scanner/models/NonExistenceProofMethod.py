@@ -5,7 +5,7 @@ class NonExistenceProofMethod(Enum):
     NSEC = "NSEC"
     NSEC3 = "NSEC3"
     INVALID = "Invalid"
-    NONE = "None"
+    NONE = "Missing"
 
     def __str__(self):
         return self.value

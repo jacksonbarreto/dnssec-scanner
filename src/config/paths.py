@@ -10,4 +10,5 @@ DATA_ERRORS_DIRECTORY: str = os.path.join(DATA_BASE_DIRECTORY, Config.get_errors
 REPORT_DIRECTORY:str = os.path.join(DATA_BASE_DIRECTORY, 'reports')
 TABLE_DIRECTORY: str = os.path.join(REPORT_DIRECTORY, 'tables')
 CHART_DIRECTORY: str = os.path.join(REPORT_DIRECTORY, 'charts')
+CONSOLIDATED_RESULT_TO_ANALYZE: str = os.path.join(REPORT_DIRECTORY, 'dnssec_consolidated_result.csv')
 LOG_FILE: str = os.path.join(ROOT_DIRECTORY, 'scan.log')

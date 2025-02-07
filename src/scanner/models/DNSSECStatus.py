@@ -4,7 +4,7 @@ from enum import Enum
 class DNSSECStatus(Enum):
     BAD_DELEGATION = "Bad Delegation"
     INVALID = "Invalid"
-    NONE = "None"
+    NONE = "Missing"
     VALID = "Valid"
 
     def __str__(self):
