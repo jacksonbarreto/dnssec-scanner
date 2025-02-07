@@ -18,6 +18,6 @@ def save_results(data: list[dict[str, any]], country_code: str, error: bool = Fa
 
     if not df.empty:
         if os.path.exists(filename):
-            df.to_csv(filename, mode='a', header=False, index=False)
+            df.to_csv(filename, mode='a', header=False, index=False, encoding='utf-8')
         else:
-            df.to_csv(filename, index=False)
+            df.to_csv(filename, index=False, encoding='utf-8')

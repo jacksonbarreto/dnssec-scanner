@@ -1,5 +1,6 @@
 import json
 import logging
+from dataclasses import asdict
 from threading import Lock
 import pandas as pd
 from concurrent.futures.thread import ThreadPoolExecutor
@@ -60,9 +61,9 @@ def scan_row(row: pd.Series, url_column: str):
         dnskey_response: dict = dnssec_query(domain_to_scan, "DNSKEY")
         dnskey_response_no_validation: dict = dnssec_query(domain_to_scan, "DNSKEY", disable_dnssec_validation=True)
         dnssec_status: DNSSECStatus = determine_dnssec_status(dnskey_response, dnskey_response_no_validation)
-        raw_result: dict[str, str] = {
-            "dnskey": json.dumps(dnskey_response),
-            "dnskeyNoValidation": json.dumps(dnskey_response_no_validation),
+        raw_result: dict[str, dict] = {
+            "dnskey": dnskey_response,
+            "dnskeyNoValidation": dnskey_response_no_validation,
         }
         algorithms: list[Algorithm] = []
         digest_algorithms: list[DigestAlgorithm] = []
@@ -72,30 +73,30 @@ def scan_row(row: pd.Series, url_column: str):
             algorithms = [parse_dnskey_data(record.get("data", "")) for record in answers]
 
             ds_response: dict = dnssec_query(domain_to_scan, "DS")
-            raw_result.update({"ds": json.dumps(ds_response)})
+            raw_result.update({"ds": ds_response})
             ds_answers = ds_response.get("Answer", [])
             digest_algorithms = [parse_ds_data(record.get("data", "")) for record in ds_answers]
 
             nsec_response: dict = dnssec_query(domain_to_scan, "NSEC")
-            raw_result.update({"nsec": json.dumps(nsec_response)})
+            raw_result.update({"nsec": nsec_response})
             nsec3param_response: dict = dnssec_query(domain_to_scan, "NSEC3PARAM")
-            raw_result.update({"nsec3Param": json.dumps(nsec3param_response)})
+            raw_result.update({"nsec3Param": nsec3param_response})
             non_existence_proof_method = determine_non_existence_proof_method(nsec_response, nsec3param_response)
         result: DNSSECResult = DNSSECResult(
             assessment_datetime=pd.Timestamp.now(),
-            raw_result=json.dumps(raw_result),
             dnssec_status=dnssec_status,
-            algorithms=algorithms,
-            digest_algorithms=digest_algorithms,
             non_existence_proof_method=non_existence_proof_method,
             score=0,
             grade=Grade.F,
+            algorithms=algorithms,
+            digest_algorithms=digest_algorithms,
+            raw_result=json.dumps(raw_result),
         )
         rating: Rating = calculate_score_default(result)
         result.score = rating.score
         result.grade = rating.grade
         with lock:
-            final_results.append({**row.to_dict(), **result})
+            final_results.append({**row.to_dict(), **asdict(result)})
     except Exception as e:
         logging.error(f"Error scanning URL {row[url_column]}: {e}")
         with lock:

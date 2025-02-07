@@ -7,7 +7,7 @@ from src.scanner.dnssec import scan
 
 
 def main():
-    files: list[str] = [f for f in os.listdir(DATA_SOURCE_DIRECTORY) if re.match(r'^[a-zA-Z]{2}_.*\.csv$', f)]
+    files: list[str] = [f for f in os.listdir(DATA_SOURCE_DIRECTORY) if re.match(r'^[a-zA-Z]{2}-.*\.csv$', f)]
     logging.info(f"Found {len(files)} files to scan.")
     if not files:
         logging.warning(

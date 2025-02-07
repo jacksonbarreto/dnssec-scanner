@@ -6,3 +6,9 @@ class DNSSECStatus(Enum):
     INVALID = "Invalid"
     NONE = "None"
     VALID = "Valid"
+
+    def __str__(self):
+        return self.value
+
+    def __repr__(self):
+        return self.value

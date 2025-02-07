@@ -6,3 +6,9 @@ class NonExistenceProofMethod(Enum):
     NSEC3 = "NSEC3"
     INVALID = "Invalid"
     NONE = "None"
+
+    def __str__(self):
+        return self.value
+
+    def __repr__(self):
+        return self.value
