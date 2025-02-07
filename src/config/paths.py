@@ -1,6 +1,10 @@
 import os
 
-ROOT_DIRECTORY = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..')
+from src.config.config import Config
 
-LOG_FILE = os.path.join(ROOT_DIRECTORY, 'scan.log')
-DATA_SOURCE_DIRECTORY = os.path.join(ROOT_DIRECTORY, 'src', 'data', 'source')
+ROOT_DIRECTORY: str = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..')
+DATA_BASE_DIRECTORY: str = os.path.join(ROOT_DIRECTORY, 'src', 'data')
+DATA_SOURCE_DIRECTORY: str = os.path.join(DATA_BASE_DIRECTORY, 'source')
+DATA_RESULTS_DIRECTORY: str = os.path.join(DATA_BASE_DIRECTORY, Config.get_results_folder())
+DATA_ERRORS_DIRECTORY: str = os.path.join(DATA_BASE_DIRECTORY, Config.get_errors_folder())
+LOG_FILE: str = os.path.join(ROOT_DIRECTORY, 'scan.log')
