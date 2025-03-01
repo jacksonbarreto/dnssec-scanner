@@ -10,7 +10,7 @@ _config: dict[str, str | int] = {
     "log_format": '%(asctime)s - %(levelname)s - %(message)s',
     "country_column": "country",
     "score_column": "score",
-    "id_column": "ETER_ID"
+    "id_column": "ETER_ID",
 }
 
 

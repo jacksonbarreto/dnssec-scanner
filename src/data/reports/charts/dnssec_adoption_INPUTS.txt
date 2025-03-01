@@ -1,0 +1,80 @@
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figs/dnssec/dnssec_adoption_in_germany_by_nuts2.pdf}
+    \caption{Dnssec Adoption In Germany By Nuts2}
+    \label{fig:dnssec_adoption_in_germany_by_nuts2}
+\end{figure} 
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figs/dnssec/dnssec_adoption_at_public_hei_in_germany_by_nuts2.pdf}
+    \caption{Dnssec Adoption At Public Hei In Germany By Nuts2}
+    \label{fig:dnssec_adoption_at_public_hei_in_germany_by_nuts2}
+\end{figure} 
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figs/dnssec/dnssec_adoption_at_private_hei_in_germany_by_nuts2.pdf}
+    \caption{Dnssec Adoption At Private Hei In Germany By Nuts2}
+    \label{fig:dnssec_adoption_at_private_hei_in_germany_by_nuts2}
+\end{figure} 
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figs/dnssec/dnssec_adoption_in_france_by_nuts2.pdf}
+    \caption{Dnssec Adoption In France By Nuts2}
+    \label{fig:dnssec_adoption_in_france_by_nuts2}
+\end{figure} 
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figs/dnssec/dnssec_adoption_at_public_hei_in_france_by_nuts2.pdf}
+    \caption{Dnssec Adoption At Public Hei In France By Nuts2}
+    \label{fig:dnssec_adoption_at_public_hei_in_france_by_nuts2}
+\end{figure} 
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figs/dnssec/dnssec_adoption_at_private_hei_in_france_by_nuts2.pdf}
+    \caption{Dnssec Adoption At Private Hei In France By Nuts2}
+    \label{fig:dnssec_adoption_at_private_hei_in_france_by_nuts2}
+\end{figure} 
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figs/dnssec/dnssec_adoption_in_italy_by_nuts2.pdf}
+    \caption{Dnssec Adoption In Italy By Nuts2}
+    \label{fig:dnssec_adoption_in_italy_by_nuts2}
+\end{figure} 
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figs/dnssec/dnssec_adoption_at_public_hei_in_italy_by_nuts2.pdf}
+    \caption{Dnssec Adoption At Public Hei In Italy By Nuts2}
+    \label{fig:dnssec_adoption_at_public_hei_in_italy_by_nuts2}
+\end{figure} 
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figs/dnssec/dnssec_adoption_at_private_hei_in_italy_by_nuts2.pdf}
+    \caption{Dnssec Adoption At Private Hei In Italy By Nuts2}
+    \label{fig:dnssec_adoption_at_private_hei_in_italy_by_nuts2}
+\end{figure} 
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figs/dnssec/dnssec_adoption_by_country.pdf}
+    \caption{Dnssec Adoption By Country}
+    \label{fig:dnssec_adoption_by_country}
+\end{figure} 
+

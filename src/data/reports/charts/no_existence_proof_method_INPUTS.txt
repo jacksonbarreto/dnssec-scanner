@@ -1,0 +1,80 @@
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figs/dnssec/no_existence_proof_method_in_germany_by_nuts2.pdf}
+    \caption{No Existence Proof Method In Germany By Nuts2}
+    \label{fig:no_existence_proof_method_in_germany_by_nuts2}
+\end{figure} 
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figs/dnssec/no_existence_proof_method_at_public_hei_in_germany_by_nuts2.pdf}
+    \caption{No Existence Proof Method At Public Hei In Germany By Nuts2}
+    \label{fig:no_existence_proof_method_at_public_hei_in_germany_by_nuts2}
+\end{figure} 
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figs/dnssec/no_existence_proof_method_at_private_hei_in_germany_by_nuts2.pdf}
+    \caption{No Existence Proof Method At Private Hei In Germany By Nuts2}
+    \label{fig:no_existence_proof_method_at_private_hei_in_germany_by_nuts2}
+\end{figure} 
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figs/dnssec/no_existence_proof_method_in_france_by_nuts2.pdf}
+    \caption{No Existence Proof Method In France By Nuts2}
+    \label{fig:no_existence_proof_method_in_france_by_nuts2}
+\end{figure} 
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figs/dnssec/no_existence_proof_method_at_public_hei_in_france_by_nuts2.pdf}
+    \caption{No Existence Proof Method At Public Hei In France By Nuts2}
+    \label{fig:no_existence_proof_method_at_public_hei_in_france_by_nuts2}
+\end{figure} 
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figs/dnssec/no_existence_proof_method_at_private_hei_in_france_by_nuts2.pdf}
+    \caption{No Existence Proof Method At Private Hei In France By Nuts2}
+    \label{fig:no_existence_proof_method_at_private_hei_in_france_by_nuts2}
+\end{figure} 
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figs/dnssec/no_existence_proof_method_in_italy_by_nuts2.pdf}
+    \caption{No Existence Proof Method In Italy By Nuts2}
+    \label{fig:no_existence_proof_method_in_italy_by_nuts2}
+\end{figure} 
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figs/dnssec/no_existence_proof_method_at_public_hei_in_italy_by_nuts2.pdf}
+    \caption{No Existence Proof Method At Public Hei In Italy By Nuts2}
+    \label{fig:no_existence_proof_method_at_public_hei_in_italy_by_nuts2}
+\end{figure} 
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figs/dnssec/no_existence_proof_method_at_private_hei_in_italy_by_nuts2.pdf}
+    \caption{No Existence Proof Method At Private Hei In Italy By Nuts2}
+    \label{fig:no_existence_proof_method_at_private_hei_in_italy_by_nuts2}
+\end{figure} 
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figs/dnssec/no_existence_proof_method_by_country.pdf}
+    \caption{No Existence Proof Method By Country}
+    \label{fig:no_existence_proof_method_by_country}
+\end{figure} 
+
